@@ -15,11 +15,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun onCreate() {
         refreshModuleStatus()
-        binding.mainTextVersion.text = getString(R.string.module_version, BuildConfig.VERSION_NAME)
-        binding.hideIconInLauncherSwitch.isChecked = isLauncherIconShowing.not()
-        binding.hideIconInLauncherSwitch.setOnCheckedChangeListener { button, isChecked ->
-            if (button.isPressed) hideOrShowLauncherIcon(isChecked)
-        }
+        hideOrShowLauncherIcon(false)
+//        binding.mainTextVersion.text = getString(R.string.module_version, BuildConfig.VERSION_NAME)
+//        binding.hideIconInLauncherSwitch.isChecked = isLauncherIconShowing.not()
+//        binding.hideIconInLauncherSwitch.setOnCheckedChangeListener { button, isChecked ->
+//            if (button.isPressed) hideOrShowLauncherIcon(isChecked)
+//        }
         // Your code here.
     }
 
@@ -65,25 +66,25 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 else -> R.drawable.bg_dark_round
             }
         )
-        binding.mainImgStatus.setImageResource(
-            when {
-                YukiHookAPI.Status.isXposedModuleActive -> R.mipmap.ic_success
-                else -> R.mipmap.ic_warn
-            }
-        )
-        binding.mainTextStatus.text = getString(
-            when {
-                YukiHookAPI.Status.isXposedModuleActive -> R.string.module_is_activated
-                else -> R.string.module_not_activated
-            }
-        )
-        binding.mainTextApiWay.isVisible = YukiHookAPI.Status.isXposedModuleActive
-        when {
-            YukiHookAPI.Status.executorVersion > 0 ->
-                binding.mainTextApiWay.text =
-                    "Activated by ${YukiHookAPI.Status.executorName} API ${YukiHookAPI.Status.executorVersion}"
-            YukiHookAPI.Status.isTaiChiModuleActive -> binding.mainTextApiWay.text = "Activated by TaiChi"
-            else -> binding.mainTextApiWay.text = "Activated by anonymous"
-        }
+//        binding.mainImgStatus.setImageResource(
+//            when {
+//                YukiHookAPI.Status.isXposedModuleActive -> R.mipmap.ic_success
+//                else -> R.mipmap.ic_warn
+//            }
+//        )
+//        binding.mainTextStatus.text = getString(
+//            when {
+//                YukiHookAPI.Status.isXposedModuleActive -> R.string.module_is_activated
+//                else -> R.string.module_not_activated
+//            }
+//        )
+//        binding.mainTextApiWay.isVisible = YukiHookAPI.Status.isXposedModuleActive
+//        when {
+//            YukiHookAPI.Status.executorVersion > 0 ->
+//                binding.mainTextApiWay.text =
+//                    "Activated by ${YukiHookAPI.Status.executorName} API ${YukiHookAPI.Status.executorVersion}"
+//            YukiHookAPI.Status.isTaiChiModuleActive -> binding.mainTextApiWay.text = "Activated by TaiChi"
+//            else -> binding.mainTextApiWay.text = "Activated by anonymous"
+//        }
     }
 }

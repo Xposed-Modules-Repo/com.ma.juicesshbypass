@@ -27,14 +27,14 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <androidx.constraintlayout.utils.widget.ImageFilterView
-            style="?android:attr/selectableItemBackgroundBorderless"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:layout_marginEnd="5dp"
-            android:alpha="0.85"
-            android:src="@mipmap/ic_github"
-            android:tint="@color/colorTextGray" />
+<!--        <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--            style="?android:attr/selectableItemBackgroundBorderless"-->
+<!--            android:layout_width="27dp"-->
+<!--            android:layout_height="27dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:alpha="0.85"-->
+<!--            android:src="@mipmap/ic_github"-->
+<!--            android:tint="@color/colorTextGray" />-->
     </LinearLayout>
 
     <LinearLayout
@@ -49,14 +49,14 @@
         android:elevation="0dp"
         android:gravity="center">
 
-        <androidx.constraintlayout.utils.widget.ImageFilterView
-            android:id="@+id/main_img_status"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="5dp"
-            android:src="@mipmap/ic_warn"
-            android:tint="@color/white" />
+<!--        <androidx.constraintlayout.utils.widget.ImageFilterView-->
+<!--            android:id="@+id/main_img_status"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:src="@mipmap/ic_warn"-->
+<!--            android:tint="@color/white" />-->
 
         <LinearLayout
             android:layout_width="match_parent"

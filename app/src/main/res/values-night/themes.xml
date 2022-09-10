@@ -1,14 +1,14 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.AppDefault" parent="Theme.Material3.DayNight">
+    <style name="Theme.AppDefault" parent="@style/Theme.AppCompat.Light">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorPrimaryAccent</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryAccent</item>
-        <item name="colorOnPrimary">@color/colorPrimaryAccent</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorPrimaryAccent</item>
-        <item name="colorSecondaryVariant">@color/colorPrimaryAccent</item>
-        <item name="colorOnSecondary">@color/colorPrimaryAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryAccent</item>
+<!--        <item name="colorOnPrimary">@color/colorPrimaryAccent</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/colorPrimaryAccent</item>-->
+<!--        <item name="colorSecondaryVariant">@color/colorPrimaryAccent</item>-->
+<!--        <item name="colorOnSecondary">@color/colorPrimaryAccent</item>-->
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/black</item>
         <item name="android:windowLightStatusBar">false</item>

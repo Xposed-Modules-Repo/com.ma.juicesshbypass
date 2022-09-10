@@ -4,13 +4,9 @@ package com.ma.skipdialogadbinstall.ui.view
 
 import android.content.Context
 import android.content.res.ColorStateList
-import android.graphics.Color
-import android.text.TextUtils
 import android.util.AttributeSet
 import androidx.appcompat.widget.SwitchCompat
-import com.ma.skipdialogadbinstall.utils.factory.dp
 import com.ma.skipdialogadbinstall.utils.factory.isSystemInDarkMode
-import top.defaults.drawabletoolbox.DrawableBuilder
 
 class MaterialSwitch(context: Context, attrs: AttributeSet?) : SwitchCompat(context, attrs) {
 
@@ -25,29 +21,29 @@ class MaterialSwitch(context: Context, attrs: AttributeSet?) : SwitchCompat(cont
 
     private val thumbColor get() = if (context.isSystemInDarkMode) 0xFF7C7C7C else 0xFFCCCCCC
 
-    init {
-        trackDrawable = DrawableBuilder()
-            .rectangle()
-            .rounded()
-            .solidColor(0xFF656565.toInt())
-            .height(20.dp(context))
-            .cornerRadius(15.dp(context))
-            .build()
-        thumbDrawable = DrawableBuilder()
-            .rectangle()
-            .rounded()
-            .solidColor(Color.WHITE)
-            .size(20.dp(context), 20.dp(context))
-            .cornerRadius(20.dp(context))
-            .strokeWidth(8.dp(context))
-            .strokeColor(Color.TRANSPARENT)
-            .build()
-        trackTintList = trackColors(
-            0xFF656565.toInt(),
-            thumbColor.toInt(),
-            thumbColor.toInt()
-        )
-        isSingleLine = true
-        ellipsize = TextUtils.TruncateAt.END
-    }
+//    init {
+//        trackDrawable = DrawableBuilder()
+//            .rectangle()
+//            .rounded()
+//            .solidColor(0xFF656565.toInt())
+//            .height(20.dp(context))
+//            .cornerRadius(15.dp(context))
+//            .build()
+//        thumbDrawable = DrawableBuilder()
+//            .rectangle()
+//            .rounded()
+//            .solidColor(Color.WHITE)
+//            .size(20.dp(context), 20.dp(context))
+//            .cornerRadius(20.dp(context))
+//            .strokeWidth(8.dp(context))
+//            .strokeColor(Color.TRANSPARENT)
+//            .build()
+//        trackTintList = trackColors(
+//            0xFF656565.toInt(),
+//            thumbColor.toInt(),
+//            thumbColor.toInt()
+//        )
+//        isSingleLine = true
+//        ellipsize = TextUtils.TruncateAt.END
+//    }
 }
